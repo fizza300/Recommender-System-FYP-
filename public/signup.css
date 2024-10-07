@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    background-image: url('images/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
+.login-container {
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    border: 5px solid transparent;
+    position: relative;
+    animation: colorChange 3s infinite;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+@keyframes colorChange {
+    0% { border-color: black; }
+    50% { border-color: blue; }
+    100% { border-color: rgb(252, 157, 173); }
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 5px;
+    color: #fff;
+}
+
+
+.login-container input,
+.login-container select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.login-container input:focus,
+.login-container select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.login-container .sub {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px; /* Add margin to the top of the button */
+}
+
+.login-container .sub:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fcfcfc;
+    text-decoration: underline;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Emotions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: blue;
+    background-image: url('images/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+
+
+    }
+    .container {
+       background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    text-align: center;
+    border: 5px solid transparent;
+    position: relative;
+    animation: colorChange 3s infinite;
+    margin: 0 auto;
+    }
+    @keyframes colorChange {
+    0% { border-color: black; }
+    50% { border-color: blue; }
+    100% { border-color: rgb(252, 157, 173); }
+    }
+    .btn {
+    
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .options-container {
+      margin-top: 20px;
+    }
+    .options-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .options-list {
+      list-style: none;
+      padding: 0;
+    }
+    .options-list li {
+      margin-bottom: 10px;
+    }
+    .options-list a {
+      display: block;
+      padding: 10px;
+      background-color: #f0f0f0;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .options-list a:hover {
+      background-color: #e0e0e0;
+    }
+
+    .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: #e74cac;
+            text-decoration: none;
+        }
+        .back-arrow:hover {
+            color: #4cafce;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center;">Explore Emotions</h1>
+
+    <!-- Buttons for different emotions -->
+    <div style="text-align: center;">
+      <button class="btn" onclick="exploreEmotion('sad')">😢 Sad</button>
+      <button class="btn" onclick="exploreEmotion('happy')">😄 Happy</button>
+      <button class="btn" onclick="exploreEmotion('calm')">😌 Calm</button>
+      <button class="btn" onclick="exploreEmotion('energetic')">😃 Energetic</button>
+      
+    </div>
+<a href="/home" class="back-arrow">&#8592; Home</a>
+
+    <!-- Container for displaying options -->
+    <div class="options-container">
+      <h2 class="options-title" id="emotionTitle">Click a button to explore</h2>
+      <ul class="options-list" id="optionsList">
+        <!-- Options will be dynamically added here -->
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Function to show options based on selected emotion
+    function exploreEmotion(emotion) {
+      var optionsContainer = document.getElementById('optionsList');
+      var emotionTitle = document.getElementById('emotionTitle');
+
+      // Clear previous options
+      optionsContainer.innerHTML = '';
+
+      // Update title based on selected emotion
+      emotionTitle.textContent = `Explore ${emotion} Options`;
+
+      // Define options based on the emotion
+      var options = {
+        sad: [
+          { label: 'Sad Songs Playlist', link: 'https://www.youtube.com/watch?v=rtOvBOTyX00&list=PLplXQ2cg9B_oExP9gO8WQD0UTtRrI-Prg' },
+          { label: 'Sad Movies Playlist', link: 'https://www.youtube.com/watch?v=hoWifeC0UOU&list=PLXhQDOJZfOdhep7h9WFefsqSFS5OGkDe-' },
+          { label: 'Sad Novels', link: 'https://www.goodreads.com/shelf/show/sad-novels' }
+        ],
+        happy: [
+          { label: 'Happy Songs Playlist', link: 'https://www.youtube.com/watch?v=ru0K8uYEZWw&list=RDQMFcYCSyGFBB4&start_radio=1' },
+          { label: 'Happy Movies Playlist', link: 'https://www.youtube.com/watch?v=CQCcapWEbu8&list=PLm9l7EEbJuhzLTz8aVdDfYIn2TQ_X_-0S' },
+          { label: 'Happy Novels', link: 'https://www.goodreads.com/shelf/show/happy-novels' }
+        ],
+        calm: [
+          { label: 'Calm Songs Playlist', link: 'https://www.youtube.com/watch?v=XXYlFuWEuKI&list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj' },
+          { label: 'Calm Movies Playlist', link: 'https://www.youtube.com/watch?v=BDLsCwWy6LQ&list=PLum50h_rWpG5e-46sLWgZAvWrbGzms---' },
+          { label: 'Calm Novels', link: 'https://www.goodreads.com/shelf/show/novels' }
+        ],
+        energetic: [
+          { label: 'Energetic Songs Playlist', link: 'https://www.youtube.com/watch?v=Iuuu-o72yLQ&list=PLQdn7YisXz3NBAGjVjgtKlnPLj5TaO975' },
+          { label: 'Energetic Movies Playlist', link: 'https://www.youtube.com/watch?v=tyezUnJnYYQ&list=PLXEg1KA5o1XlTxYy2_rX72MiQcsJzqdHi' },
+          { label: 'Energetic Novels', link: 'https://www.goodreads.com/shelf/show/novels' }
+        
+        ]
+      };
+
+      // Create list items for each option
+      options[emotion].forEach(option => {
+        var listItem = document.createElement('li');
+        var link = document.createElement('a');
+        link.textContent = option.label;
+        link.href = option.link;
+        link.target = '_blank'; // Open link in new tab
+        listItem.appendChild(link);
+        optionsContainer.appendChild(listItem);
+      });
+      
+    }
+  </script>
+</body>
+</html>

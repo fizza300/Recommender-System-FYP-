@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestify</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="./index.html" class="logo">
+<img src="/images/logo1.png" alt="Logo 1">      </a>
+
+      <div class="header-actions">
+
+       
+
+        <div class="lang-wrapper">
+          <label for="language">
+            <ion-icon name="globe-outline"></ion-icon>
+          </label>
+
+          <
+        </div>
+
+        <button class="btn btn-primary" onclick="window.location.href='http://localhost:8501'">RECOMMENDATION</button>
+
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="/home" class="logo">
+            <img src="/images/logo1.png" alt="logo">
+          </a>
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="/home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="/movies" class="navbar-link">Movies</a>
+          </li>
+
+          <li>
+  <a href="/songs" class="navbar-link">Songs</a>
+</li>
+
+          <li>
+            <a href="/novels" class="navbar-link">Novels</a>
+          </li>
+
+          
+          <li>
+            <a href="/emotions" class="navbar-link">Emotions</a>
+          </li>
+          <li>
+            <a href="/booking" class="navbar-link">Booking</a>
+          </li>
+
+          <li>
+          </li>
+
+              
+        </ul>
+
+        </ul>
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+      <script src="script.js"></script>
+
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+    
+      <section class="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">SUGGESTIFY</p>
+
+            <h1 class="h1 hero-title">
+              Unlimited <strong>Movie</strong>, Songs and Novels.
+            </h1>
+
+            <div class="meta-wrapper">
+
+              <div class="badge-wrapper">
+
+                <div class="badge badge-outline">HD</div>
+              </div>
+
+              <div class="ganre-wrapper">
+                <a href="#">Happy,</a>
+
+                <a href="#">Sad</a>
+                                <a href="#">etc</a>
+
+              </div>
+
+              <div class="date-time">
+
+                <div>
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time datetime="2024">2024</time>
+                </div>
+
+               
+
+            </div>
+            
+            <button class="btn btn-primary" onclick="window.location.href='/login'">
+  <ion-icon name="play"></ion-icon>
+  
+  <span>Watched</span>
+</button>
+          </div>
+
+        </div>
+      </section>
+
+      
+
+        <section>
+          <div class="card-container">
+
+  <div class="card-meta">
+    <div class="badge badge-outline">Movies</div>
+    <a href="https://www.youtube.com/watch?v=5syct99MvVw&list=PLum50h_rWpG5e-46sLWgZAvWrbGzms---" target="_blank">
+      <img src="images/M.png" alt="Movies Playlist" class="cover-pic">
+      <button class="action-button">Watch</button>
+    </a>
+  </div>
+
+  <div class="card-meta">
+    <div class="badge badge-outline">Songs</div>
+    <a href="https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI" target="_blank">
+      <img src="images/S.png" alt="Songs Playlist" class="cover-pic1">
+      <button class="action-button">Listen</button>
+    </a>
+  </div>
+
+  <div class="card-meta">
+    <div class="badge badge-outline">Novels</div>
+    <a href="https://www.goodreads.com/shelf/show/english-novels" target="_blank">
+      <img src="images/N.png" alt="Novels List" class="cover-pic2">
+      <button class="action-button">Read</button>
+    </a>
+  </div>
+
+</div>
+
+        </section>
+
+      <section class="service">
+        <div class="container">
+
+          <div class="service-banner">
+            <figure>
+              <img src="images/fimage.png" alt="HD 4k resolution!">
+            </figure>
+
+            <a href="images/service-banner.jpg" download class="service-btn">
+              <span>WATCH AND READ</span>
+
+              <ion-icon name="download-outline"></ion-icon>
+            </a>
+          </div>
+
+          <div class="service-content">
+
+            <p class="service-subtitle">Our Services</p>
+
+            <h2 class="h2 service-title">Watch, Read and Enjoy </h2>
+
+            <p class="service-text">
+Suggestify revolutionizes the way you discover entertainment, harnessing the power of machine learning to deliver personalized recommendations tailored specifically to your tastes. By analyzing your viewing, listening, and reading habits, Suggestify ensures that every suggestion is perfectly suited to your preferences, making it easier than ever to find your next favorite movie, song, or novel. Say goodbye to endless scrolling and generic recommendations— with Suggestify, the perfect entertainment experience is just a click away.            </p>
+
+            <ul class="service-list">
+
+              <li>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="tv"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Enjoy Your Life.</h3>
+
+                    <p class="card-text">
+"Thank you! I'm here to assist you whenever you need. If you have any questions or need help with anything, feel free to ask!"                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="videocam"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Watch Everywhere.</h3>
+
+                    <p class="card-text">
+"Watch Everywhere" suggests the ability to enjoy entertainment content from various platforms and devices, offering convenience and flexibility. Whether it's movies, TV shows, or other media, the phrase implies accessibility across different screens, locations, and services.</p>
+                  </div>
+
+
+                </div>
+              </li>
+              
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="cta-title">Start Watching</h2>
+
+            <p class="cta-text">
+              Start Watching.
+            </p>
+          </div>
+
+          <form action="" class="cta-form">
+            <input type="email" name="email" required placeholder="Enter your email" class="email-field">
+
+            <button type="submit" class="cta-form-btn">Get started</button>
+          </form>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+        <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo">
+<img src="/images/logo1.png" alt="Logo 1">      </a>
+          </a>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="./home" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Movies</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Songs</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Novels</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Emotions</a>
+            </li>
+
+
+            <li>
+              <a href="#" class="footer-link">Booking</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Terms of use</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacy</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">CodewithusFM</a>. All Rights Reserved
+        </p>
+
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

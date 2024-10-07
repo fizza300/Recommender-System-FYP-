@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Preference Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="preference-container">
+        <h2>Content Preference Form</h2>
+        <form id="preferenceForm" action="/login" method="post">
+            <div class="form-group">
+                <label for="genre">Favorite Genres:</label><br>
+                <input type="checkbox" id="action" name="genre" value="Action" required>
+                <label for="action">Action</label><br>
+                <input type="checkbox" id="drama" name="genre" value="Drama">
+                <label for="drama">Drama</label><br>
+                <input type="checkbox" id="comedy" name="genre" value="Comedy">
+                <label for="comedy">Comedy</label><br>
+                <input type="checkbox" id="romance" name="genre" value="Romance">
+                <label for="romance">Romance</label><br>
+                <input type="checkbox" id="sci-fi" name="genre" value="Sci-Fi">
+                <label for="sci-fi">Sci-Fi</label><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="language">Preferred Languages:</label><br>
+                <input type="checkbox" id="english" name="language" value="English" required>
+                <label for="english">English</label><br>
+                <input type="checkbox" id="spanish" name="language" value="Spanish">
+                <label for="spanish">Spanish</label><br>
+                <input type="checkbox" id="french" name="language" value="French">
+                <label for="french">French</label><br>
+                <input type="checkbox" id="german" name="language" value="German">
+                <label for="german">German</label><br>
+                <!-- Add more languages as needed -->
+            </div>
+
+            <div class="form-group">
+                <label for="content-type">Preferred Content Types:</label><br>
+                <input type="checkbox" id="movies" name="content-type" value="Movies">
+                <label for="movies">Movies</label><br>
+                <input type="checkbox" id="tv-shows" name="content-type" value="TV Shows">
+                <label for="tv-shows">TV Shows</label><br>
+                <input type="checkbox" id="documentaries" name="content-type" value="Documentaries">
+                <label for="documentaries">Documentaries</label><br>
+            </div>
+
+
+
+<button class="Submit" onclick="window.location.href='/login'">Submit</button>
+
+         </form>
+    </div>
+</body>
+</html>
